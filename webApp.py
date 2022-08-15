@@ -16,7 +16,7 @@ This tool fetches and provides you with a list of residential properties which a
 
 # -----------------------------Define functions----------------------------------
 def user_inputs():
-    global address, mode, maximum_travel_time_minutes, maximum_travel_time_seconds, max_price, min_bedrooms, max_bedrooms, \
+    global address, mode, maximum_travel_time_minutes, max_price, min_bedrooms, max_bedrooms, \
         min_bathrooms, max_bathrooms, property_type_code
     # Travel Filters
     #x_coord = st.sidebar.text_input('Longitude (decimal degrees in epsg4326)', 28.06144872313252)
@@ -24,7 +24,6 @@ def user_inputs():
     address = st.sidebar.text_input('Address (i.e. 161 Maude Street, Sandown, Sandton, Gauteng)')
     mode = st.sidebar.selectbox('Travel Mode', ["drive", "bicycle", "walk", "approximated_transit"], 0)
     maximum_travel_time_minutes = st.sidebar.number_input('Maximum Average Travel Time (minutes)', 10)
-    maximum_travel_time_seconds = 60 *  maximum_travel_time_minutes
     
     # Property Filters
     ###property_type = st.sidebar.selectbox('Property Type', ['Houses','Flats & Apartments','Townhouse & Clusters','Land','Farms & Smallholdings','Garden Cottage'],1)
