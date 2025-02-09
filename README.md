@@ -4,3 +4,5 @@ This tool fetches and provides you with a list of residential properties which a
     - Workplace location,
     - Travel time to your workplace,
     - Rental property needs.
+
+![Screenshot of api colleciton on postman](./property_recommender_api.png)
